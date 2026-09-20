@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import {
-  getIndexablePages,
+  getAllPages,
   getLanguageAlternates,
 } from "@/lib/content";
 import { absoluteUrl } from "@/lib/urls";
@@ -29,5 +29,5 @@ export function buildSitemapEntries(
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return buildSitemapEntries(getIndexablePages());
+  return buildSitemapEntries(getAllPages());
 }

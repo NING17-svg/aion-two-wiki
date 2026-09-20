@@ -2,7 +2,7 @@
 
 ## Project Snapshot
 
-`example.com` is a generated game guide site. After launch, treat the generated project as a live content property, not as the central workflow repo or a template.
+`aion-two.wiki` is a generated game guide site for AION 2 (Steam AppID 3393110, published by NCWest, planned release date October 5, 2026). After launch, treat the generated project as a live content property, not as the central workflow repo or a template.
 
 The site uses Next.js App Router, TypeScript, data-driven content in `src/data`, generated metadata, JSON-LD, sitemap, robots, and Next.js static export deployed through Cloudflare Workers Static Assets. Production guide sites must not route ordinary page requests through an OpenNext or other Worker JS runtime.
 
@@ -49,7 +49,7 @@ A growth-relevant task is not complete until `GROWTH_LOG.md` is updated.
 - `npm run validate:template` is mandatory after theme, asset, page-shell, or guide-module changes.
 - `npm run validate:content` checks page count, URLs, FAQ references, and related-page references.
 - `npm run validate:rendered-seo` checks sitemap, canonical metadata, hreflang/x-default, route-manifest alignment, FAQ schema, robots alignment, GA4/Bing wiring, and the fixed AdSense ownership trio.
-- `npm run indexnow:submit -- --submit --site-url https://example.com --url https://example.com/changed-page` submits only the live URLs changed by the current update. It prints one line and a remote submission failure does not roll back or block an otherwise verified publish.
+- `npm run indexnow:submit -- --submit --site-url https://aion-two.wiki --url https://aion-two.wiki/changed-page` submits only the live URLs changed by the current update. It prints one line and a remote submission failure does not roll back or block an otherwise verified publish.
 - `npm run routes:manifest` prints the final fixed, tool, entity-Hub, and entity-detail routes; use `-- --output route-manifest.json` when Builder/Verifier needs a machine-readable file.
 - `npm run verify` runs the broader local validation chain.
 

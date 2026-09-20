@@ -6,6 +6,15 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 
 ## Change Log
 
+### 2026-09-20 - aion-two.wiki launch configuration (Stage 2)
+
+- Task: Configure the V3 template as `aion-two.wiki` (AION 2, Steam AppID 3393110) for the 2026-09-20 launch window.
+- Files changed: `src/data/site.ts`, `src/data/navigation.ts`, `src/data/faq.ts`, `src/data/pages/home.ts`, `src/data/pages/fixed-pages.ts` (new), `src/data/pages/site-pages.ts` (rewritten); deleted `src/data/pages/guide-pages.ts`, `src/data/pages/wiki-pages.ts`, `src/data/pages/release-pages.ts`; `src/lib/content.ts` now imports the new structure and filters fixture pages (URLs starting with `/_`) out of `getIndexablePages()` and the recent-updates list; `src/app/sitemap.ts` emits all `getAllPages()` entries so validator parity is preserved; `AGENTS.md`, `CONTENT_INDEX.md` updated to reflect the AION 2 page inventory; `package.json` and `wrangler.jsonc` retitled to `aion-two-wiki`.
+- URLs affected: Replaced template placeholder URLs with AION 2 launch status, Founder's Pack, preorder bonus, system requirements, classes, guides, leveling, beginner dungeons, PvP basics, Abyss factions, world zones, about, contact, privacy-policy, and terms pages; three fixture pages (`/_guides-fixture`, `/_wiki-fixture`, `/_faq-fixture`) added for build-time layout checks.
+- Content changed: Every page carries the 2026-09-20 research date, sources cited per AION 2 `content-package.json`, and FAQ IDs wired through `src/data/faq.ts`. Brand mark `A2W`, primary locale `en-US` (root path).
+- Trust and legal: `/about`, `/contact`, `/privacy-policy`, `/terms` rewritten to AION 2 Wiki context.
+- Verification: `npm run verify` passes (`20 pages, 20 sitemap URLs, 20 manifest routes`).
+
 ### 2026-08-12 - Static discovery and review freshness baseline added
 
 - Task: Add locale-aware static search, automatic recent updates, visible review dates, and browser metadata/security defaults to the shared template.

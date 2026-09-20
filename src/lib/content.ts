@@ -1,24 +1,22 @@
 import type { FAQItem, PageContent, RouteKind } from "@/types/content";
 import { entityFamilies } from "@/data/entities";
 import { faqItems } from "@/data/faq";
-import { guidePages } from "@/data/pages/guide-pages";
+import { fixedPages } from "@/data/pages/fixed-pages";
 import { homePage } from "@/data/pages/home";
-import { releasePages } from "@/data/pages/release-pages";
 import { sitePages } from "@/data/pages/site-pages";
-import { wikiPages } from "@/data/pages/wiki-pages";
 import { buildEntityPages } from "@/lib/entities";
 import { normalizePath } from "@/lib/localization";
 
-const fixedPages: PageContent[] = [
-  homePage,
-  ...wikiPages,
-  ...guidePages,
-  ...releasePages,
-  ...sitePages,
-];
+const fixtureUrls = new Set(
+  fixedPages
+    .filter((page) => page.url.startsWith("/_"))
+    .map((page) => page.url),
+);
 
 const pages: PageContent[] = [
+  homePage,
   ...fixedPages,
+  ...sitePages,
   ...buildEntityPages(entityFamilies),
 ];
 
@@ -36,7 +34,7 @@ export function getAllPages(): PageContent[] {
 }
 
 export function getIndexablePages(): PageContent[] {
-  return pages;
+  return pages.filter((page) => !fixtureUrls.has(page.url));
 }
 
 export function getPageByUrl(url: string): PageContent | undefined {
@@ -98,8 +96,9 @@ function compareUrls(left: PageContent, right: PageContent): number {
 
 /**
  * Returns a small, deterministic set of content pages for a locale's homepage.
- * Trust pages and tools are intentionally excluded so this is driven only by
- * editorial review dates on actual indexable content pages.
+ * Trust pages, tools, and fixture pages (URLs starting with `/_`) are
+ * intentionally excluded so this is driven only by editorial review dates on
+ * actual indexable content pages.
  */
 export function getRecentUpdates(
   locale: string,
@@ -115,7 +114,8 @@ export function getRecentUpdates(
         page.pageType !== "home" &&
         page.pageType !== "faq" &&
         page.pageType !== "site" &&
-        page.routeKind !== "tool",
+        page.routeKind !== "tool" &&
+        !page.url.startsWith("/_"),
     )
     .sort((left, right) => {
       if (left.lastReviewed !== right.lastReviewed) {

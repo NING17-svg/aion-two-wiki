@@ -6,10 +6,17 @@ export interface LocalizedNavigationItem {
 }
 
 export const primaryNavigation: LocalizedNavigationItem[] = [
-  { href: "/wiki", labels: { "en-US": "Wiki" } },
-  { href: "/guides", labels: { "en-US": "Guides" } },
+  // Launch & Status cluster
   { href: "/release-date", labels: { "en-US": "Release Date" } },
-  { href: "/faq", labels: { "en-US": "FAQ" } },
+  { href: "/global-release", labels: { "en-US": "Global Release" } },
+  { href: "/founders-packs", labels: { "en-US": "Founder's Packs" } },
+  { href: "/preorder-bonus", labels: { "en-US": "Preorder Bonus" } },
+  { href: "/system-requirements", labels: { "en-US": "System Requirements" } },
+  // Classes & Roles cluster
+  { href: "/classes", labels: { "en-US": "Classes" } },
+  { href: "/guides", labels: { "en-US": "Guides" } },
+  // Endgame & PvP cluster
+  { href: "/guides/abyss-factions", labels: { "en-US": "Abyss Factions" } },
 ];
 
 export const footerNavigation: LocalizedNavigationItem[] = [

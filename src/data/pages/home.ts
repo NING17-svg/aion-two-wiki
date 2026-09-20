@@ -9,63 +9,151 @@ export const homePage: PageContent = {
   slug: "",
   url: "/",
   pageType: "home",
-  presentation: { shell: "home" },
-  h1: `${site.gameName} Guide Hub`,
-  seoTitle: `${site.gameName} Guide Hub | Wiki, Guides, Release Date, FAQ`,
+  presentation: { shell: "home", variant: "media-hero" },
+  h1: "AION 2 release date, classes, Founder's Packs hub",
+  seoTitle: "AION 2 release date, classes, Founder's Packs hub",
   metaDescription:
-    "A clean guide hub template with wiki notes, starter guides, release information, FAQs, and trust pages for a game攻略站 launch.",
+    "Confirm the AION 2 release date and current Steam launch status, browse the class roster, compare Founder's Pack tiers, and find guides to prepare for US play.",
   summary:
-    "Start here for the wiki index, guide categories, launch information, and frequently asked questions.",
+    "Pre-launch reference hub for AION 2 (Steam AppID 3393110): release date status, Founder's Pack tiers, classes, system requirements, guides hub, and Abyss faction PvP context for US English search users.",
   hero: {
-    eyebrow: "Unofficial guide hub",
+    eyebrow: "Pre-launch reference",
     subtitle: site.tagline,
     ctas: [
-      { label: "Open Wiki", href: "/wiki" },
-      { label: "Browse Guides", href: "/guides" },
+      { label: "Release date", href: "/release-date" },
+      { label: "Browse classes", href: "/classes" },
+      { label: "Founder's Packs", href: "/founders-packs" },
     ],
   },
   quickAnswer:
-    "This homepage acts as the central guide hub for the selected game, linking users to wiki notes, guides, release information, and FAQs.",
+    "Based on the Steam store page and SteamDB listing for AppID 3393110, the AION 2 release date is Oct 5, 2026. The Steam launch is published by NCWest and confirmed across official store and publisher sources as of 2026-09-20. Founder's Pack tiers, the class roster, and English-language UI support are also confirmed on the Steam store page. Beta unlock times, Steam Deck verification, mobile cross-play, and review embargo status were not announced as of 2026-09-20.",
   keyFacts: [
-    { label: "Site type", value: "Unofficial guide hub" },
-    { label: "V1 page set", value: "5 content pages + 4 trust pages" },
-    { label: "Source rule", value: "Official facts only before launch" },
+    { label: "Release date", value: "October 5, 2026 (Steam AppID 3393110)" },
+    { label: "Publisher", value: "NCWest" },
+    { label: "Platform", value: "Steam (Windows 10 64-bit minimum)" },
+    { label: "Language", value: "English (primary supported locale)" },
+    { label: "Last verified", value: "2026-09-20" },
   ],
   modules: [
     {
-      id: "start-here",
-      type: "prose",
-      heading: "Start here",
-      body:
-        "Use the wiki page for core game facts, the guides page for player-facing help, and the release page for official launch timing. Replace each placeholder with verified information before publishing.",
-      links: [
-        { label: "Wiki", href: "/wiki", description: "Core facts and game systems." },
-        { label: "Guides", href: "/guides", description: "Starter guide categories." },
-        { label: "Release Date", href: "/release-date", description: "Official launch timing." },
-      ],
-    },
-    {
-      id: "safe-launch",
-      type: "prose",
-      heading: "Safe launch baseline",
-      body:
-        "The template keeps the first version small so the launch workflow can verify routing, metadata, sitemap, robots, analytics, and Search Console submission before deeper content work begins.",
-    },
-    {
-      id: "example-entries",
+      id: "release-window",
       type: "entity-grid",
-      heading: "Guide Entry Points",
+      heading: "Launch & Status",
       items: [
-        { title: "Wiki", summary: "Core facts and game systems.", href: "/wiki" },
-        { title: "Guides", summary: "Starter guide categories.", href: "/guides" },
-        { title: "Release Date", summary: "Official launch timing.", href: "/release-date" },
-        { title: "FAQ", summary: "Short answers and source context.", href: "/faq" },
+        {
+          title: "Release date status",
+          summary:
+            "Confirm the AION 2 release date and current Steam launch stage.",
+          href: "/release-date",
+        },
+        {
+          title: "Global release scope",
+          summary:
+            "Understand the worldwide launch scope, region ordering, and Korean franchise context.",
+          href: "/global-release",
+        },
+        {
+          title: "Founder's Packs",
+          summary:
+            "Compare Standard, Deluxe, Ultimate, and Global tiers with prices and early-access days.",
+          href: "/founders-packs",
+        },
+        {
+          title: "Preorder bonus",
+          summary:
+            "Digital entitlements and Founder's Pack overlap explained before launch.",
+          href: "/preorder-bonus",
+        },
+        {
+          title: "System requirements",
+          summary:
+            "PC minimum specs and Steam Deck / mobile cross-play status as of the research date.",
+          href: "/system-requirements",
+        },
       ],
+    },
+    {
+      id: "classes-and-guides",
+      type: "entity-grid",
+      heading: "Classes & Guides",
+      items: [
+        {
+          title: "Classes hub",
+          summary:
+            "Browse the seven confirmed AION 2 classes with role archetypes and selection guidance.",
+          href: "/classes",
+        },
+        {
+          title: "Guides hub",
+          summary:
+            "Beginner, progression, and endgame guides for AION 2 grouped by stage.",
+          href: "/guides",
+        },
+        {
+          title: "Leveling guide",
+          summary:
+            "Quest and dungeon priority with the level 45 milestone that opens the Abyss.",
+          href: "/guides/leveling",
+        },
+        {
+          title: "Beginner dungeons",
+          summary:
+            "First instanced group content with mechanics, groups, and rewards.",
+          href: "/guides/dungeons-beginner",
+        },
+        {
+          title: "PvP basics",
+          summary:
+            "Open-world PvP, gear progression, and class suitability in the Abyss setting.",
+          href: "/guides/pvp-basics",
+        },
+        {
+          title: "Abyss factions",
+          summary:
+            "Elyos vs Asmodians conflict, sieges, and endgame progression.",
+          href: "/guides/abyss-factions",
+        },
+        {
+          title: "World zones",
+          summary:
+            "Starting zones, level-gated regions, and flight mechanics across the world map.",
+          href: "/world-zones",
+        },
+      ],
+    },
+    {
+      id: "safety-notes",
+      type: "callout",
+      tone: "caution",
+      title: "What is not confirmed as of 2026-09-20",
+      body:
+        "Pre-launch beta unlock times, head-start windows, Steam Deck verification status, mobile cross-play support, and review embargoes have not been announced by NCWest. The level 45 milestone that opens the Abyss is a community-discussed reference point, not an officially confirmed cap. Per-class skill trees, gender-lock status, and tier rankings also require dated media or beta-confirmed sources.",
+    },
+    {
+      id: "sources",
+      type: "prose",
+      heading: "Sources",
+      body:
+        "Every fact on this hub is dated to 2026-09-20 and sourced to the AION 2 Steam store page (AppID 3393110), SteamDB metadata, the NCWest publisher portal, the PlayNC franchise portal, the Steam Community hub, and r/aion community discussion. Legacy 2009 AION material is referenced only as clarification; AION 2 systems are the current confirmed scope.",
     },
   ],
-  faqIds: ["what-is-this-site", "is-official"],
-  relatedPageIds: ["wiki", "guides", "release-date", "faq"],
+  faqIds: [
+    "what-is-aion-2",
+    "when-is-aion-2-release",
+    "which-founders-pack-tier",
+    "how-many-aion-2-classes",
+    "is-aion-2-global-on-steam",
+  ],
+  relatedPageIds: [
+    "fixed-release-date-en-US",
+    "fixed-classes-en-US",
+    "fixed-founders-packs-en-US",
+    "fixed-system-requirements-en-US",
+    "fixed-preorder-bonus-en-US",
+    "fixed-guides-hub-en-US",
+    "fixed-global-release-en-US",
+  ],
   schemaTypes: ["WebSite", "CollectionPage", "FAQPage"],
-  sourceStatus: "internal",
-  lastReviewed: "2026-06-18",
+  sourceStatus: "official",
+  lastReviewed: "2026-09-20",
 };

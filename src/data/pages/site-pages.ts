@@ -1,59 +1,9 @@
 import { site } from "@/data/site";
 import type { PageContent } from "@/types/content";
 
+const RESEARCH_DATE = "2026-09-20";
+
 export const sitePages: PageContent[] = [
-  {
-    id: "faq",
-    translationKey: "faq",
-    locale: "en-US",
-    routeKind: "fixed",
-    slug: "faq",
-    url: "/faq",
-    pageType: "faq",
-    presentation: { shell: "content", variant: "reading-full" },
-    h1: `${site.gameName} FAQ`,
-    seoTitle: `${site.gameName} FAQ | Common Questions`,
-    metaDescription:
-      "A frequently asked questions page template for site status, release info, platforms, and starter guide scope.",
-    summary:
-      "A compact FAQ page for launch questions and safe starter answers.",
-    hero: {
-      eyebrow: "FAQ",
-      subtitle:
-        "Answer common launch, platform, wiki, and guide-scope questions without overclaiming.",
-      ctas: [
-        { label: "Release Info", href: "/release-date" },
-        { label: "Contact", href: "/contact" },
-      ],
-    },
-    quickAnswer:
-      "This FAQ should answer only what the site can support with official facts or clear internal policy.",
-    keyFacts: [
-      { label: "FAQ source", value: "Official facts or site policy" },
-      { label: "Schema", value: "FAQ JSON-LD enabled" },
-      { label: "Review", value: "Update as launch facts change" },
-    ],
-    modules: [
-      {
-        id: "faq-policy",
-        type: "prose",
-        heading: "FAQ policy",
-        body:
-          "Keep answers short, source-aware, and easy to update. Avoid speculative claims about release dates, platforms, gameplay systems, or technical details.",
-      },
-    ],
-    faqIds: [
-      "what-is-this-site",
-      "is-official",
-      "release-date-known",
-      "platforms-known",
-      "guide-depth",
-    ],
-    relatedPageIds: ["wiki", "guides", "release-date", "about"],
-    schemaTypes: ["FAQPage", "BreadcrumbList"],
-    sourceStatus: "internal",
-    lastReviewed: "2026-06-18",
-  },
   {
     id: "about",
     translationKey: "about",
@@ -66,43 +16,57 @@ export const sitePages: PageContent[] = [
     h1: `About ${site.name}`,
     seoTitle: `About ${site.name}`,
     metaDescription:
-      "About page template for an unofficial game guide site, including scope, sourcing, and editorial principles.",
+      "About AION 2 Wiki: unofficial pre-launch reference scope, sourcing rules, and editorial principles for US English search users tracking the Steam launch.",
     summary:
-      "A trust page explaining the site's unofficial status, sourcing rules, and guide scope.",
+      "A trust page explaining the unofficial status of AION 2 Wiki, sourcing rules, and guide scope.",
     hero: {
       eyebrow: "About",
       subtitle:
-        "Explain what the site covers, how facts are sourced, and what readers should expect.",
+        "Learn what AION 2 Wiki covers, how facts are sourced, and what readers should expect from this reference hub.",
       ctas: [{ label: "Contact", href: "/contact" }],
     },
-    quickAnswer:
-      `${site.name} is an unofficial guide hub template that should be filled with verified game information before launch.`,
+    quickAnswer: `${site.name} is an unofficial pre-launch reference hub for US English search users. Every fact is sourced from the AION 2 Steam store page (AppID 3393110), SteamDB metadata, the NCWest publisher portal, the PlayNC franchise portal, the Steam Community hub, or r/aion community discussion, and every claim carries the research date of ${RESEARCH_DATE}.`,
     keyFacts: [
-      { label: "Status", value: "Unofficial fan guide" },
-      { label: "Editorial rule", value: "Verified facts first" },
-      { label: "Scope", value: "Wiki, guides, release info, FAQ" },
+      { label: "Status", value: "Unofficial fan reference" },
+      { label: "Research date", value: RESEARCH_DATE },
+      { label: "Primary sources", value: "Steam store, SteamDB, NCWest, PlayNC, r/aion" },
+      { label: "Editor policy", value: "Sourced facts only; no unverified walkthroughs" },
     ],
     modules: [
       {
-        id: "mission",
+        id: "about-mission",
         type: "prose",
         heading: "Mission",
         body:
-          "Help players find clear, well-structured information without pretending the site knows more than official sources support.",
+          "AION 2 Wiki exists to give US English search users a single pre-launch reference hub for the AION 2 Steam launch. The site keeps the release date, Founder's Pack tiers, class roster, system requirements, guide structure, and Abyss faction context in one place so readers do not have to bounce between community threads and store pages to verify the basics.",
       },
       {
-        id: "sourcing",
+        id: "about-scope",
+        type: "prose",
+        heading: "Scope",
+        body:
+          "The site covers launch and status (release date, global release, Founder's Packs, preorder bonus, system requirements), classes and roles (the seven confirmed classes plus a selection guide), guides (leveling, beginner dungeons, PvP basics, Abyss factions, world zones), and trust pages (about, contact, privacy, terms). Each page is dated to the research date and references the source it was checked against.",
+      },
+      {
+        id: "about-sourcing",
         type: "prose",
         heading: "Sourcing",
         body:
-          "Use official websites, store pages, developer updates, publisher posts, and press materials for launch facts. Mark uncertain areas as pending instead of filling gaps with guesses.",
+          "Facts are sourced from the AION 2 Steam store page (AppID 3393110), the SteamDB metadata for the same AppID, the NCWest publisher portal, the PlayNC franchise portal, the Steam Community hub, and the r/aion subreddit. Original 2009 AION material is referenced only as legacy clarification; AION 2 systems are the current scope. Items that have not been confirmed by NCWest or dated media are written as dated not-confirmed status notes so readers can decide what to trust.",
+      },
+      {
+        id: "about-editing",
+        type: "prose",
+        heading: "Editorial principles",
+        body:
+          "We do not fill gaps with speculation. Per-class skill trees, gender-lock rules, specific dungeon rosters, Steam Deck verification status, mobile cross-play support, and review embargo status are explicitly written as not confirmed when no official source supports them. We revisit the sources before launch day and update each page so the research date stays current.",
       },
     ],
-    faqIds: ["what-is-this-site", "is-official"],
-    relatedPageIds: ["contact", "privacy-policy", "terms"],
+    faqIds: ["what-is-aion-2", "is-official"],
+    relatedPageIds: ["fixed-release-date-en-US", "fixed-classes-en-US", "fixed-guides-hub-en-US"],
     schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],
     sourceStatus: "internal",
-    lastReviewed: "2026-06-18",
+    lastReviewed: RESEARCH_DATE,
   },
   {
     id: "contact",
@@ -116,21 +80,22 @@ export const sitePages: PageContent[] = [
     h1: "Contact",
     seoTitle: `Contact | ${site.name}`,
     metaDescription:
-      "Contact page template for corrections, official source updates, and site feedback.",
+      "Contact AION 2 Wiki for corrections, source updates, and editorial feedback on the release date, Founder's Packs, classes, and guides content.",
     summary:
-      "A trust page for corrections, source updates, and site feedback.",
+      "A trust page for corrections, source updates, and feedback on the AION 2 launch coverage.",
     hero: {
       eyebrow: "Contact",
       subtitle:
-        "Use this page for corrections, source updates, and feedback channels.",
+        "Send corrections, source updates, or feedback on the AION 2 launch coverage.",
       ctas: [{ label: "Read About", href: "/about" }],
     },
     quickAnswer:
-      "Replace this page with a working contact method before launch, such as an email address or contact form.",
+      "Use the contact form to send corrections, source updates, or feedback on AION 2 Wiki content. We respond fastest when you include the official source link (Steam store page, NCWest portal, PlayNC portal, Steam Community hub, or r/aion thread) and the page URL that needs the update.",
     keyFacts: [
-      { label: "Primary use", value: "Corrections and feedback" },
-      { label: "Launch requirement", value: "Add a real contact method" },
-      { label: "Response", value: "Set expectations clearly" },
+      { label: "Primary use", value: "Corrections, source updates, feedback" },
+      { label: "Best attachment", value: "Official source link + page URL" },
+      { label: "Out of scope", value: "Game account credentials, private account details" },
+      { label: "Last reviewed", value: RESEARCH_DATE },
     ],
     modules: [
       {
@@ -138,21 +103,28 @@ export const sitePages: PageContent[] = [
         type: "prose",
         heading: "Contact method",
         body:
-          "Add a real email address or form endpoint before publishing. This placeholder exists so the site has a complete trust-page structure.",
+          "Send corrections and feedback to the contact inbox listed in the Cloudflare email routing setup for this domain (support@aion-two.wiki). Include the page URL you want updated and an official source link that confirms the change. We do not request or store game account credentials or private account details.",
       },
       {
-        id: "corrections",
+        id: "contact-corrections",
         type: "prose",
         heading: "Corrections",
         body:
-          "Invite readers to send official source links when facts change. Do not ask for private account information or game account credentials.",
+          "If you spot a fact that disagrees with the AION 2 Steam store page (AppID 3393110), SteamDB metadata, the NCWest publisher portal, the PlayNC franchise portal, or the Steam Community hub, send us the official source link and the page URL. We update the page, refresh the research date, and note the source in the page footer.",
+      },
+      {
+        id: "contact-feedback",
+        type: "prose",
+        heading: "Editorial feedback",
+        body:
+          "We accept feedback on which guide topics to expand first, which classes deserve deeper coverage, and which sources to cite. We do not respond to feedback that asks us to fill in unverified details about AION 2 systems, classes, or endgame content.",
       },
     ],
     faqIds: [],
     relatedPageIds: ["about", "privacy-policy", "terms"],
     schemaTypes: ["Article", "BreadcrumbList"],
     sourceStatus: "internal",
-    lastReviewed: "2026-06-18",
+    lastReviewed: RESEARCH_DATE,
   },
   {
     id: "privacy-policy",
@@ -166,50 +138,58 @@ export const sitePages: PageContent[] = [
     h1: "Privacy Policy",
     seoTitle: `Privacy Policy | ${site.name}`,
     metaDescription:
-      "Privacy policy template for a lightweight game guide site using basic analytics and contact channels.",
+      "Privacy policy for AION 2 Wiki: aggregate GA4 analytics only when configured, no user accounts, and Adsterra advertising only when enabled.",
     summary:
-      "A starter privacy policy page for analytics, logs, and contact messages.",
+      "A starter privacy policy for analytics, hosting logs, and contact messages on AION 2 Wiki.",
     hero: {
       eyebrow: "Privacy",
       subtitle:
-        "Explain what data the site collects, why it is used, and how visitors can make contact.",
+        "Explain what data AION 2 Wiki collects, why it is used, and how visitors can make contact.",
       ctas: [{ label: "Terms", href: "/terms" }],
     },
     quickAnswer:
-      "This page should be reviewed before launch and updated to match the deployed site's analytics, hosting, and contact setup.",
+      "AION 2 Wiki does not include user accounts, comments, or payments. If GA4 is configured, aggregate usage data is collected via the GA4 measurement ID on this domain; if Adsterra advertising is enabled, the Adsterra provider may process technical request data to deliver and measure ads. The site does not request sensitive personal information.",
     keyFacts: [
       { label: "Analytics", value: "GA4 only when configured" },
       { label: "Accounts", value: "No user accounts in V1" },
       { label: "Ads", value: "Adsterra only when enabled" },
+      { label: "Last reviewed", value: RESEARCH_DATE },
     ],
     modules: [
       {
-        id: "data",
+        id: "privacy-data",
         type: "prose",
         heading: "Information we collect",
         body:
-          "This site does not include accounts, comments, or payments. If GA4 is configured, analytics may collect aggregate usage information according to Google Analytics settings. If advertising is enabled, the third-party advertising provider may process technical request data and use cookies or similar technologies to deliver and measure ads.",
+          "AION 2 Wiki does not include accounts, comments, or payments. If GA4 is configured for this domain, Google Analytics may collect aggregate usage information (page views, referrers, device category) according to the GA4 measurement ID associated with this site. If advertising is enabled, the third-party advertising provider may process technical request data and use cookies or similar technologies to deliver and measure ads.",
       },
       {
-        id: "contact",
+        id: "privacy-contact",
         type: "prose",
         heading: "Contact messages",
         body:
-          "If a contact method is added, messages may include the information visitors choose to send. Do not request sensitive personal information.",
+          "If a visitor sends a message to the support inbox or contact form, we keep the message long enough to respond and update the relevant page. We do not request sensitive personal information, game account credentials, or payment details through the contact form.",
       },
       {
-        id: "updates",
+        id: "privacy-cookies",
+        type: "prose",
+        heading: "Cookies and similar technologies",
+        body:
+          "AION 2 Wiki does not set first-party tracking cookies outside the analytics and advertising providers listed above. Third-party cookies set by GA4 or the advertising provider follow the respective provider's cookie policy.",
+      },
+      {
+        id: "privacy-updates",
         type: "prose",
         heading: "Policy updates",
         body:
-          "Update this policy when analytics, hosting, contact methods, advertising providers, or other data collection behavior changes.",
+          "Update this policy whenever analytics, hosting, contact methods, or advertising providers change. The research date above tracks the last manual review of this page.",
       },
     ],
     faqIds: [],
     relatedPageIds: ["about", "contact", "terms"],
     schemaTypes: ["Article", "BreadcrumbList"],
     sourceStatus: "internal",
-    lastReviewed: "2026-06-18",
+    lastReviewed: RESEARCH_DATE,
   },
   {
     id: "terms",
@@ -223,49 +203,56 @@ export const sitePages: PageContent[] = [
     h1: "Terms of Use",
     seoTitle: `Terms of Use | ${site.name}`,
     metaDescription:
-      "Terms of use template for an unofficial game guide site, including scope, disclaimers, and acceptable use.",
+      "Terms of use for AION 2 Wiki: unofficial status disclaimer, informational scope, and acceptable use for US English search users.",
     summary:
-      "A starter terms page for an unofficial guide site.",
+      "A starter terms page for the unofficial AION 2 Wiki reference hub.",
     hero: {
       eyebrow: "Terms",
       subtitle:
-        "Set clear expectations for unofficial status, informational use, and site changes.",
+        "Set clear expectations for unofficial status, informational use, and changes to AION 2 Wiki.",
       ctas: [{ label: "Privacy Policy", href: "/privacy-policy" }],
     },
     quickAnswer:
-      "This terms page is a template and should be reviewed before launch for the final site owner and jurisdiction.",
+      "AION 2 Wiki is an unofficial fan reference hub. Content is informational only and may not match final official details for the AION 2 launch; rely on the AION 2 Steam store page (AppID 3393110), the NCWest publisher portal, and the PlayNC franchise portal for final purchase, platform, and release decisions.",
     keyFacts: [
-      { label: "Use", value: "Informational guide content" },
+      { label: "Use", value: "Informational reference content" },
       { label: "Official status", value: "Unofficial fan site" },
-      { label: "Review", value: "Update before launch" },
+      { label: "Last reviewed", value: RESEARCH_DATE },
     ],
     modules: [
       {
-        id: "unofficial",
+        id: "terms-unofficial",
         type: "prose",
         heading: "Unofficial site",
         body:
-          "This site is not affiliated with the game publisher, developer, platform holders, or trademark owners unless explicitly stated after launch.",
+          "AION 2 Wiki is not affiliated with the AION 2 publisher (NCWest), developer (NCSoft), Steam (Valve), platform holders, or trademark owners unless explicitly stated after launch. References to AION 2, AION, NCWest, NCSoft, and PlayNC are made for factual identification only and do not imply endorsement.",
       },
       {
-        id: "accuracy",
+        id: "terms-accuracy",
         type: "prose",
         heading: "Information accuracy",
         body:
-          "Guide information may change as official details are updated. Use official sources for final purchase, platform, and release decisions.",
+          "Reference information on AION 2 Wiki may change as official details are updated. The research date at the top of each page tracks the last manual review. Use official sources for final purchase, platform, and release decisions; treat any item flagged as not confirmed as dated guidance rather than fact.",
       },
       {
-        id: "acceptable-use",
+        id: "terms-acceptable-use",
         type: "prose",
         heading: "Acceptable use",
         body:
-          "Do not misuse the site, scrape aggressively, interfere with service availability, or submit harmful content through any future contact channel.",
+          "Do not misuse the site, scrape aggressively, interfere with service availability, or submit harmful content through any contact channel. We may limit or block access that violates these terms.",
+      },
+      {
+        id: "terms-changes",
+        type: "prose",
+        heading: "Changes to these terms",
+        body:
+          "We update these terms when analytics, hosting, contact methods, advertising providers, or editorial scope change. The research date above tracks the last manual review of this page.",
       },
     ],
     faqIds: [],
     relatedPageIds: ["about", "contact", "privacy-policy"],
     schemaTypes: ["Article", "BreadcrumbList"],
     sourceStatus: "internal",
-    lastReviewed: "2026-06-18",
+    lastReviewed: RESEARCH_DATE,
   },
 ];
