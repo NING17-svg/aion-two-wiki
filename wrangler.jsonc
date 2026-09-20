@@ -9,7 +9,7 @@
   },
   "vars": {
     "NEXT_PUBLIC_SITE_URL": "https://aion-two.wiki",
-    "NEXT_PUBLIC_GA_MEASUREMENT_ID": "",
+    "NEXT_PUBLIC_GA_MEASUREMENT_ID": "G-55BBB0E10Z",
     "NEXT_PUBLIC_BING_SITE_AUTH_CODE": ""
   }
 }
