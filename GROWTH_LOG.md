@@ -6,6 +6,12 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 
 ## Change Log
 
+### 2026-09-20 - aion-two.wiki Adsterra integration
+
+- Task: Replace the six empty Adsterra unit placeholders in `src/data/ads.ts` with the real fixed six ad codes collected from the publisher dashboard.
+- Files changed: `src/data/ads.ts`.
+- Verification: `npm run verify` passes (20 pages, 20 sitemap URLs, 20 manifest routes) after the placeholder replacement.
+
 ### 2026-09-20 - aion-two.wiki launch configuration (Stage 2)
 
 - Task: Configure the V3 template as `aion-two.wiki` (AION 2, Steam AppID 3393110) for the 2026-09-20 launch window.
