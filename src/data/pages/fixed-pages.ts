@@ -17,7 +17,7 @@ const REDDIT_URL = "https://www.reddit.com/r/aion/";
 const fixturePages: PageContent[] = [
   {
     id: "guides",
-    translationKey: "guides-fixture",
+    translationKey: "guides",
     locale: "en-US",
     routeKind: "fixed",
     slug: "_guides-fixture",
@@ -52,7 +52,7 @@ const fixturePages: PageContent[] = [
   },
   {
     id: "wiki",
-    translationKey: "wiki-fixture",
+    translationKey: "wiki",
     locale: "en-US",
     routeKind: "fixed",
     slug: "_wiki-fixture",
@@ -87,7 +87,7 @@ const fixturePages: PageContent[] = [
   },
   {
     id: "faq-fixture",
-    translationKey: "faq-fixture",
+    translationKey: "faq",
     locale: "en-US",
     routeKind: "fixed",
     slug: "_faq-fixture",

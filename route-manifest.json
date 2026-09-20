@@ -1,0 +1,202 @@
+[
+  {
+    "id": "home",
+    "translationKey": "home",
+    "locale": "en-US",
+    "routeKind": "home",
+    "url": "/",
+    "alternates": {
+      "en-US": "/"
+    }
+  },
+  {
+    "id": "faq-fixture",
+    "translationKey": "faq",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/_faq-fixture",
+    "alternates": {
+      "en-US": "/_faq-fixture"
+    }
+  },
+  {
+    "id": "guides",
+    "translationKey": "guides",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/_guides-fixture",
+    "alternates": {
+      "en-US": "/_guides-fixture"
+    }
+  },
+  {
+    "id": "wiki",
+    "translationKey": "wiki",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/_wiki-fixture",
+    "alternates": {
+      "en-US": "/_wiki-fixture"
+    }
+  },
+  {
+    "id": "about",
+    "translationKey": "about",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/about",
+    "alternates": {
+      "en-US": "/about"
+    }
+  },
+  {
+    "id": "fixed-classes-en-US",
+    "translationKey": "classes",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/classes",
+    "alternates": {
+      "en-US": "/classes"
+    }
+  },
+  {
+    "id": "contact",
+    "translationKey": "contact",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/contact",
+    "alternates": {
+      "en-US": "/contact"
+    }
+  },
+  {
+    "id": "fixed-founders-packs-en-US",
+    "translationKey": "founders-packs",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/founders-packs",
+    "alternates": {
+      "en-US": "/founders-packs"
+    }
+  },
+  {
+    "id": "fixed-global-release-en-US",
+    "translationKey": "global-release",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/global-release",
+    "alternates": {
+      "en-US": "/global-release"
+    }
+  },
+  {
+    "id": "fixed-guides-hub-en-US",
+    "translationKey": "guides-hub",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/guides",
+    "alternates": {
+      "en-US": "/guides"
+    }
+  },
+  {
+    "id": "fixed-abyss-factions-en-US",
+    "translationKey": "abyss-factions",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/guides/abyss-factions",
+    "alternates": {
+      "en-US": "/guides/abyss-factions"
+    }
+  },
+  {
+    "id": "fixed-dungeons-beginner-en-US",
+    "translationKey": "dungeons-beginner",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/guides/dungeons-beginner",
+    "alternates": {
+      "en-US": "/guides/dungeons-beginner"
+    }
+  },
+  {
+    "id": "fixed-leveling-guide-en-US",
+    "translationKey": "leveling-guide",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/guides/leveling",
+    "alternates": {
+      "en-US": "/guides/leveling"
+    }
+  },
+  {
+    "id": "fixed-pvp-basics-en-US",
+    "translationKey": "pvp-basics",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/guides/pvp-basics",
+    "alternates": {
+      "en-US": "/guides/pvp-basics"
+    }
+  },
+  {
+    "id": "fixed-preorder-bonus-en-US",
+    "translationKey": "preorder-bonus",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/preorder-bonus",
+    "alternates": {
+      "en-US": "/preorder-bonus"
+    }
+  },
+  {
+    "id": "privacy-policy",
+    "translationKey": "privacy-policy",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/privacy-policy",
+    "alternates": {
+      "en-US": "/privacy-policy"
+    }
+  },
+  {
+    "id": "fixed-release-date-en-US",
+    "translationKey": "release-date",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/release-date",
+    "alternates": {
+      "en-US": "/release-date"
+    }
+  },
+  {
+    "id": "fixed-system-requirements-en-US",
+    "translationKey": "system-requirements",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/system-requirements",
+    "alternates": {
+      "en-US": "/system-requirements"
+    }
+  },
+  {
+    "id": "terms",
+    "translationKey": "terms",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/terms",
+    "alternates": {
+      "en-US": "/terms"
+    }
+  },
+  {
+    "id": "fixed-world-zones-en-US",
+    "translationKey": "world-zones",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/world-zones",
+    "alternates": {
+      "en-US": "/world-zones"
+    }
+  }
+]
