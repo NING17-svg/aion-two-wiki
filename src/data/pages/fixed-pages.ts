@@ -10,8 +10,8 @@ const PLAYNC_URL = "https://aion.plaync.com/";
 const REDDIT_URL = "https://www.reddit.com/r/aion/";
 
 // Fixture pages live behind URLs that start with `/_`. They exist so that
-// validate-template-contract.ts can render PageHero and search-index fixtures
-// for review-date and multilingual checks, but they are excluded from the
+// the contract validator can render PageHero and search-index fixtures for
+// review-date and multilingual checks, but they are excluded from the
 // indexable page set so they do not appear in the sitemap, the homepage
 // "recent updates" list, or the public search index.
 const fixturePages: PageContent[] = [
