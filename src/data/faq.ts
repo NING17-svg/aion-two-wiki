@@ -36,7 +36,7 @@ export const faqItems: FAQItem[] = [
     id: "which-founders-pack-tier",
     question: "Which AION 2 Founder's Pack tier should US players buy?",
     answer:
-      "Pick the Standard tier for launch-day access plus the base cosmetic bundle. Pick Deluxe for more early-access days and an expanded cosmetic bundle. Pick Ultimate for the longest non-Global early-access window plus the largest cosmetic bundle. Pick Global for the regional extras and the longest non-Ultimate early-access window. Exact per-tier prices carry the 2026-09-20 research date.",
+      "Pick Standard ($24.99) if you only want the 5-day Advance Access head start and the base cosmetic bundle. Pick Deluxe ($49.99) for the Ascended Daeva armor and the Eternal Sun weapon. Pick Ultimate ($99.99) for the full cosmetic set (Daeva's Styling Chest, Moonlit Aria armor, Black Dragon pet, Blazing Sun wings). The 5-day Advance Access head start is the same on every tier.",
     pageIds: ["home", "fixed-founders-packs-en-US"],
     category: "site",
     schemaEligible: true,
@@ -46,7 +46,7 @@ export const faqItems: FAQItem[] = [
     id: "how-many-aion-2-classes",
     question: "How many AION 2 classes are confirmed?",
     answer:
-      "Seven AION 2 classes are confirmed by Steam Community hub and r/aion discussion: assassin, gladiator, cleric, templar, chanter, ranger, and sorceress. Per-class skill trees and gender-lock status require dated media as of 2026-09-20.",
+      "Eight AION 2 classes are confirmed for launch: assassin, gladiator, cleric, templar, chanter, ranger, sorcerer, and spiritmaster. They group into four archetypes: Warrior (Gladiator, Templar), Scout (Assassin, Ranger), Mage (Sorcerer, Spiritmaster), Priest (Cleric, Chanter). Per-class skill trees and gender-lock status require dated media as of 2026-09-22.",
     pageIds: ["home", "fixed-classes-en-US"],
     category: "gameplay",
     schemaEligible: true,
@@ -139,7 +139,7 @@ export const faqItems: FAQItem[] = [
     id: "aion-2-classes-count",
     question: "How many AION 2 classes are there?",
     answer:
-      "Seven AION 2 classes are confirmed by Steam Community hub and r/aion discussion: assassin, gladiator, cleric, templar, chanter, ranger, and sorceress. Per-class skill trees require dated media as of 2026-09-20.",
+      "Eight AION 2 classes are confirmed for launch: assassin, gladiator, cleric, templar, chanter, ranger, sorcerer, and spiritmaster. The Mage archetype includes both Sorcerer and Spiritmaster (sometimes called Elementalist); per-class weapons and skill categories are listed on the classes hub as of 2026-09-22.",
     pageIds: ["fixed-classes-en-US"],
     category: "gameplay",
     schemaEligible: true,
@@ -159,7 +159,7 @@ export const faqItems: FAQItem[] = [
     id: "aion-2-class-solo",
     question: "What is the best AION 2 class for solo play?",
     answer:
-      "The best AION 2 class for solo play is community opinion, not an official ranking. Ranger and sorceress are commonly cited on r/aion for solo leveling; assassin is cited for solo PvP. Treat these as community guidance, not as an official tier list.",
+      "The best AION 2 class for solo play is community opinion, not an official ranking. Ranger and sorcerer are commonly cited on r/aion for solo leveling; assassin is cited for solo PvP. Treat these as community guidance, not as an official tier list.",
     pageIds: ["fixed-classes-en-US"],
     category: "gameplay",
     schemaEligible: true,
@@ -169,7 +169,7 @@ export const faqItems: FAQItem[] = [
     id: "aion-2-class-abyss-pvp",
     question: "Which AION 2 class fits Abyss faction PvP?",
     answer:
-      "The original 2009 AION Abyss (legacy reference) treated tank and support classes (gladiator, templar, cleric, chanter) as siege anchors, with DPS classes (assassin, ranger, sorceress) as frontline damage. AION 2 inheritance of that pattern is reasonable but not officially confirmed as of 2026-09-20.",
+      "The original 2009 AION Abyss (legacy reference) treated tank and support classes (gladiator, templar, cleric, chanter) as siege anchors, with DPS classes (assassin, ranger, sorcerer) as frontline damage. AION 2 inheritance of that pattern is reasonable but not officially confirmed as of 2026-09-22.",
     pageIds: ["fixed-classes-en-US", "fixed-abyss-factions-en-US"],
     category: "gameplay",
     schemaEligible: true,
@@ -180,7 +180,7 @@ export const faqItems: FAQItem[] = [
     id: "aion-2-founders-packs-tiers",
     question: "What are the AION 2 Founder's Packs tiers?",
     answer:
-      "The four AION 2 Founder's Packs tiers are Standard, Deluxe, Ultimate, and Global. Tier availability is confirmed by the Steam store page and the NCWest publisher portal as of 2026-09-20.",
+      "The three confirmed Western AION 2 Founder's Packs tiers are Standard ($24.99), Deluxe ($49.99), and Ultimate ($99.99). The earlier 'Global' fourth edition is not part of the confirmed Western roster.",
     pageIds: ["fixed-founders-packs-en-US"],
     category: "release",
     schemaEligible: true,
@@ -190,7 +190,7 @@ export const faqItems: FAQItem[] = [
     id: "aion-2-founders-packs-price",
     question: "How much do AION 2 Founder's Packs cost?",
     answer:
-      "Exact per-tier pricing carries the 2026-09-20 research date. Open the Steam store page for AppID 3393110 in the US region for the live price on each tier.",
+      "Standard is $24.99, Deluxe is $49.99, and Ultimate is $99.99 in USD as of 2026-09-22. Prices are confirmed on the Steam store page for AppID 3393110 and the PlayNC Founder's Pack notice.",
     pageIds: ["fixed-founders-packs-en-US"],
     category: "release",
     schemaEligible: true,
@@ -200,17 +200,17 @@ export const faqItems: FAQItem[] = [
     id: "aion-2-founders-packs-early-access",
     question: "Do all AION 2 Founder's Packs include early access?",
     answer:
-      "Yes. Each of the four tiers includes an early-access window, with Standard at the shortest and Ultimate at the longest among the non-Global tiers. The Global tier matches the highest non-Global early-access window. Per-tier day counts carry the 2026-09-20 research date.",
+      "Yes. All three tiers include a 5-day Advance Access head start that opens on Sep 30, 2026. The advance-access length is the same on every tier; the price difference between tiers is the cosmetic bundle.",
     pageIds: ["fixed-founders-packs-en-US"],
     category: "release",
     schemaEligible: true,
     sourceStatus: "official",
   },
   {
-    id: "aion-2-global-vs-ultimate",
-    question: "Is the AION 2 Global Founder's Pack different from Ultimate?",
+    id: "aion-2-founders-packs-worth-it",
+    question: "Is the AION 2 Founder's Pack worth buying?",
     answer:
-      "Yes. The Global tier is the region-specific edition with its own cosmetic bundle plus the base items, while Ultimate carries the largest non-region-specific cosmetic bundle plus exclusive items. Both include early access.",
+      "Yes for the 5-day Advance Access head start if you want to be playing on Sep 30, 2026; the offer is limited to one pack per Steam account and runs through the close of Advance Access on Oct 4, 2026. Pick the cosmetic tier that matches the look you actually want to wear; the head start is the same on every tier.",
     pageIds: ["fixed-founders-packs-en-US"],
     category: "release",
     schemaEligible: true,
@@ -364,7 +364,7 @@ export const faqItems: FAQItem[] = [
     id: "aion-2-solo-or-group-leveling",
     question: "Should I solo or group level in AION 2?",
     answer:
-      "Solo leveling works for assassin, gladiator, templar, and ranger players who can handle elite pulls. Cleric, chanter, and sorceress players level faster in groups because their archetypes depend on group buffs or healer support.",
+      "Solo leveling works for assassin, gladiator, templar, and ranger players who can handle elite pulls. Cleric, chanter, and sorcerer players level faster in groups because their archetypes depend on group buffs or healer support.",
     pageIds: ["fixed-leveling-guide-en-US"],
     category: "gameplay",
     schemaEligible: true,

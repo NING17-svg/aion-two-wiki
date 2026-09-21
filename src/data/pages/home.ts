@@ -55,7 +55,7 @@ export const homePage: PageContent = {
         {
           title: "Founder's Packs",
           summary:
-            "Compare Standard, Deluxe, Ultimate, and Global tiers with prices and early-access days.",
+            "Compare Standard ($24.99), Deluxe ($49.99), and Ultimate ($99.99) tiers with named cosmetics and the 5-day Advance Access head start.",
           href: "/founders-packs",
         },
         {
@@ -80,7 +80,7 @@ export const homePage: PageContent = {
         {
           title: "Classes hub",
           summary:
-            "Browse the seven confirmed AION 2 classes with role archetypes and selection guidance.",
+            "Browse the eight launch AION 2 classes with role archetypes, per-class weapons, and a starter-class pick framework.",
           href: "/classes",
         },
         {

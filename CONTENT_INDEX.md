@@ -13,10 +13,10 @@ The rows below are the primary-locale baseline (en-US). Localized versions keep 
 | `/` | `src/data/pages/home.ts` | Landing | AION 2 release date | Confirm launch and find the right page | Release Date / Classes / Founder's Packs | Hub | Pre-launch hub for US English search users. |
 | `/release-date` | `src/data/pages/fixed-pages.ts` | Guide | AION 2 release date | Verify the launch date and stage | Founder's Packs / Global Release / Preorder Bonus | Supporting hub | Sources: Steam store page (AppID 3393110), SteamDB. |
 | `/global-release` | `src/data/pages/fixed-pages.ts` | Guide | AION 2 global release date | Understand worldwide launch scope | Release Date / Founder's Packs / System Requirements | Supporting hub | Single worldwide Steam date under NCWest publisher scope. |
-| `/founders-packs` | `src/data/pages/fixed-pages.ts` | Guide | AION 2 Founder's Packs | Compare tiers, prices, early-access days | Preorder Bonus / Global Release | Supporting hub | Standard, Deluxe, Ultimate, Global. Prices carry research date 2026-09-20. |
+| `/founders-packs` | `src/data/pages/fixed-pages.ts` | Guide | AION 2 Founder's Packs | Compare tiers, prices, early-access days | Preorder Bonus / Global Release | Supporting hub | Standard $24.99, Deluxe $49.99, Ultimate $99.99. 5-day Advance Access, sale window July 22 to Oct 4 2026, one-pack-per-account rule. Prices last verified 2026-09-22. |
 | `/preorder-bonus` | `src/data/pages/fixed-pages.ts` | Guide | AION 2 preorder bonus | Digital entitlements and Founder's Pack overlap | Founder's Packs / Release Date | Supporting hub | Physical collectibles not announced as of 2026-09-20. |
 | `/system-requirements` | `src/data/pages/fixed-pages.ts` | Guide | AION 2 system requirements | Check PC minimum specs and platform status | Release Date / Global Release | Supporting hub | Recommended tier, Steam Deck, mobile cross-play not announced. |
-| `/classes` | `src/data/pages/fixed-pages.ts` | Guide | AION 2 classes | Browse the seven confirmed classes | Leveling / PvP / Abyss Factions | Hub | Seven confirmed classes. Per-class skill trees not confirmed. |
+| `/classes` | `src/data/pages/fixed-pages.ts` | Guide | AION 2 classes | Browse the eight launch classes | Leveling / PvP / Abyss Factions | Hub | Eight launch classes grouped by Warrior / Scout / Mage / Priest archetype. Per-class weapons and skill categories listed. Last verified 2026-09-22. |
 | `/guides` | `src/data/pages/fixed-pages.ts` | Guide | AION 2 guides | Find beginner, progression, endgame guides | Leveling / Beginner Dungeons / PvP Basics | Hub | Three-stage guide index. |
 | `/guides/leveling` | `src/data/pages/fixed-pages.ts` | Guide | AION 2 leveling guide | Fastest path to the level 45 milestone | Classes / Beginner Dungeons / Abyss Factions | Supporting | Quest-first, dungeon-second; level 45 Abyss unlock. |
 | `/guides/dungeons-beginner` | `src/data/pages/fixed-pages.ts` | Guide | AION 2 beginner dungeons | First instanced group content | Leveling / Classes | Supporting | Roles, mechanics, rewards. Roster requires dated media. |
@@ -61,16 +61,20 @@ The following fixture pages exist behind URLs that start with `/_` so they are f
 
 ## Source Map
 
-Each page lists sources in the Sources module with the 2026-09-20 research date:
+Each page lists sources in the Sources module with the 2026-09-22 research date for the class roster and Founder's Pack pages:
 
 - Official/store: `https://store.steampowered.com/app/3393110/` (AION 2 Steam store page, AppID 3393110).
 - Official/store: `https://steamdb.info/app/3393110/` (SteamDB metadata).
 - Official/community: `https://steamcommunity.com/app/3393110` (Steam Community hub).
 - Official/publisher: `https://www.ncwest.com/` (NCWest publisher portal).
 - Official/publisher: `https://aion.plaync.com/` (PlayNC franchise portal).
+- Official/publisher: `https://aion2.plaync.com/en-us/board/notice/view?articleId=50000072` (PlayNC Founder's Pack notice, updated 2026-09-16).
+- Community: `https://aion2.wiki.fextralife.com/Aion_2` (Fextralife AION 2 wiki, class deep dives).
+- Community: `https://www.mmoexp.com/News/aion-2-global-launch-guide-best-classes-tier-list-pc-system-requirements.html` (mmoexp launch guide).
+- Community: `https://timesaver.gg/blog/aion-2-founders-pack-worth-it` (timesaver.gg Founder's Pack coverage).
 - Community: `https://www.reddit.com/r/aion/` (r/aion subreddit).
 
 ## Open Questions
 
 - Beta unlock times, head-start windows, Steam Deck verification status, mobile cross-play support, and review embargo status are not announced by NCWest as of 2026-09-20.
-- Per-class skill trees, gender-lock rules, and per-tier Founder's Pack pricing in US dollars carry the 2026-09-20 research date.
+- Per-class skill trees, gender-lock rules, and per-tier Founder's Pack cosmetic contents carry the 2026-09-22 research date. Confirmed tier prices: Standard $24.99, Deluxe $49.99, Ultimate $99.99.

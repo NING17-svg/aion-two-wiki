@@ -6,6 +6,14 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 
 ## Change Log
 
+### 2026-09-22 - aion-two.wiki class roster and Founder's Pack refresh
+
+- Task: Refresh `/classes` with the eight launch classes (assassin, gladiator, cleric, templar, chanter, ranger, sorcerer, spiritmaster) grouped by Warrior / Scout / Mage / Priest archetype, attach per-class weapons and skill categories, and add a starter-class pick framework. Refresh `/founders-packs` with the three confirmed Western tiers at $24.99 / $49.99 / $99.99 USD, per-tier named cosmetics (Ascended Daeva armor + Eternal Sun weapon for Deluxe; Daeva's Styling Chest, Moonlit Aria armor, Black Dragon pet, Blazing Sun wings for Ultimate), the July 22 - October 4 2026 sale window, the 5-day Advance Access head start, and the one-pack-per-account rule. Footnote the 'Global' fourth edition as not part of the confirmed Western roster.
+- Files changed: `src/data/pages/fixed-pages.ts` (classes and founders-packs pages, plus cross-references in leveling guide, beginner dungeons, PvP basics, and preorder bonus modules), `src/data/pages/home.ts`, `src/data/pages/site-pages.ts`, `src/data/faq.ts`, `CONTENT_INDEX.md`.
+- URLs affected: `/classes`, `/founders-packs`, `/guides/leveling`, `/guides/dungeons-beginner`, `/guides/pvp-basics`, `/preorder-bonus`, `/`.
+- Content changed: Replaced 'sorceress' with 'Sorcerer' across the affected modules. Added Spiritmaster to close the Mage archetype gap. Replaced placeholder USD prices on the tier comparison table with confirmed figures. Added the founders-packs-global-note callout, founders-packs-window prose module, and starter-class pick framework prose module. Updated FAQ answers for `which-founders-pack-tier`, `how-many-aion-2-classes`, `aion-2-classes-count`, `aion-2-founders-packs-tiers`, `aion-2-founders-packs-price`, `aion-2-founders-packs-early-access`, and added `aion-2-founders-packs-worth-it`.
+- Sources cited: Steam store page (AppID 3393110), PlayNC Founder's Pack notice (updated 2026-09-16), Fextralife AION 2 wiki, mmoexp global launch guide, timesaver.gg Founder's Pack coverage, invenglobal, gametyrant, outputlag, aionstrategies.com, r/aion subreddit.
+
 ### 2026-09-20 - aion-two.wiki Adsterra integration
 
 - Task: Replace the six empty Adsterra unit placeholders in `src/data/ads.ts` with the real fixed six ad codes collected from the publisher dashboard.

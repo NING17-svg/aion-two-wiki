@@ -45,7 +45,7 @@ export const sitePages: PageContent[] = [
         type: "prose",
         heading: "Scope",
         body:
-          "The site covers launch and status (release date, global release, Founder's Packs, preorder bonus, system requirements), classes and roles (the seven confirmed classes plus a selection guide), guides (leveling, beginner dungeons, PvP basics, Abyss factions, world zones), and trust pages (about, contact, privacy, terms). Each page is dated to the research date and references the source it was checked against.",
+          "The site covers launch and status (release date, global release, Founder's Packs, preorder bonus, system requirements), classes and roles (the eight launch classes plus a selection guide), guides (leveling, beginner dungeons, PvP basics, Abyss factions, world zones), and trust pages (about, contact, privacy, terms). Each page is dated to the research date and references the source it was checked against.",
       },
       {
         id: "about-sourcing",
