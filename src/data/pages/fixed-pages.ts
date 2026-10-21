@@ -1,4 +1,5 @@
 import { site } from "@/data/site";
+import { petFarmingPage } from "@/data/pages/pet-farming";
 import type { PageContent } from "@/types/content";
 
 const RESEARCH_DATE = "2026-09-20";
@@ -1524,6 +1525,7 @@ const realPages: PageContent[] = [
 ];
 
 export const fixedPages: PageContent[] = [
+  petFarmingPage,
   {
     "id": "guides",
     "translationKey": "guides",
@@ -2628,6 +2630,11 @@ export const fixedPages: PageContent[] = [
             "title": "World zones (level-gated regions)",
             "summary": "Cross-reference zone unlocks and flight mechanics as you level.",
             "href": "/world-zones"
+          },
+          {
+            "title": "Pet farming",
+            "summary": "Choose a soul target, find its monster source, and plan Pet Insight and Genus progress.",
+            "href": "/guides/pet-farming"
           }
         ]
       },
@@ -2670,6 +2677,7 @@ export const fixedPages: PageContent[] = [
       "fixed-release-date-en-US",
       "fixed-classes-en-US",
       "fixed-leveling-guide-en-US",
+      "fixed-pet-farming-en-US",
       "fixed-pvp-basics-en-US",
       "fixed-abyss-factions-en-US",
       "fixed-world-zones-en-US"

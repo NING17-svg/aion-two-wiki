@@ -17,8 +17,9 @@ The rows below are the primary-locale baseline (en-US). Localized versions keep 
 | `/preorder-bonus` | `src/data/pages/fixed-pages.ts` | Guide | AION 2 preorder bonus | Digital entitlements and Founder's Pack overlap | Founder's Packs / Release Date | Supporting hub | Physical collectibles not announced as of 2026-09-20. |
 | `/system-requirements` | `src/data/pages/fixed-pages.ts` | Guide | AION 2 system requirements | Check PC minimum specs and platform status | Release Date / Global Release | Supporting hub | Recommended tier, Steam Deck, mobile cross-play not announced. |
 | `/classes` | `src/data/pages/fixed-pages.ts` | Guide | AION 2 classes | Browse the eight launch classes | Leveling / PvP / Abyss Factions | Hub | Eight launch classes grouped by Warrior / Scout / Mage / Priest archetype. Per-class weapons and skill categories listed. Last verified 2026-09-22. |
-| `/guides` | `src/data/pages/fixed-pages.ts` | Guide | AION 2 guides | Find beginner, progression, endgame guides | Leveling / Beginner Dungeons / PvP Basics | Hub | Three-stage guide index. |
+| `/guides` | `src/data/pages/fixed-pages.ts` | Guide | AION 2 guides | Find beginner, progression, endgame guides | Leveling / Beginner Dungeons / Pet Farming / PvP Basics | Hub | Three-stage guide index; pet farming appears in progression. |
 | `/guides/leveling` | `src/data/pages/fixed-pages.ts` | Guide | AION 2 leveling guide | Fastest path to the level 45 milestone | Classes / Beginner Dungeons / Abyss Factions | Supporting | Quest-first, dungeon-second; level 45 Abyss unlock. |
+| `/guides/pet-farming` | `src/data/pages/pet-farming.ts` | Guide | AION 2 pet farming | Find soul sources, starter routes, and pet progression | Guides / Leveling | Supporting | Global community references reviewed 2026-10-21; in-game Source is the location check. |
 | `/guides/dungeons-beginner` | `src/data/pages/fixed-pages.ts` | Guide | AION 2 beginner dungeons | First instanced group content | Leveling / Classes | Supporting | Roles, mechanics, rewards. Roster requires dated media. |
 | `/guides/pvp-basics` | `src/data/pages/fixed-pages.ts` | Guide | AION 2 PvP | Open-world PvP, gear, class suitability | Classes / Abyss Factions | Supporting | Gear ladder not announced as of 2026-09-20. |
 | `/guides/abyss-factions` | `src/data/pages/fixed-pages.ts` | Guide | AION 2 Abyss factions | Elyos vs Asmodians, sieges, endgame | PvP Basics / World Zones | Supporting | Faction transfer not confirmed. |
@@ -48,13 +49,13 @@ The following fixture pages exist behind URLs that start with `/_` so they are f
 ## Content Clusters
 
 - Launch and Status: `/release-date`, `/global-release`, `/founders-packs`, `/preorder-bonus`, `/system-requirements`
-- Classes and Roles: `/classes`, `/guides`, `/guides/leveling`, `/guides/dungeons-beginner`
+- Classes and Roles: `/classes`, `/guides`, `/guides/leveling`, `/guides/pet-farming`, `/guides/dungeons-beginner`
 - Endgame and PvP: `/guides/pvp-basics`, `/guides/abyss-factions`, `/world-zones`
 - Trust and Legal: `/about`, `/contact`, `/privacy-policy`, `/terms`
 
 ## Internal Linking Map
 
-- Homepage links to all five Launch and Status pages, the classes hub, the guides hub, the leveling guide, the beginner dungeons guide, PvP basics, Abyss factions, and world zones.
+- Homepage links to all five Launch and Status pages, the classes hub, the guides hub, the leveling guide, the pet farming guide, the beginner dungeons guide, PvP basics, Abyss factions, and world zones.
 - The guides hub groups pages by beginner, progression, and endgame stages and links to the dedicated pages in each stage.
 - Every fixed page has `relatedPageIds` pointing to peer pages in the same cluster so the route manifest stays a graph instead of a flat list.
 - Fixture pages have empty `relatedPageIds` and empty `faqIds` because they exist only for build-time checks.
@@ -73,6 +74,9 @@ Each page lists sources in the Sources module with the 2026-09-22 research date 
 - Community: `https://www.mmoexp.com/News/aion-2-global-launch-guide-best-classes-tier-list-pc-system-requirements.html` (mmoexp launch guide).
 - Community: `https://timesaver.gg/blog/aion-2-founders-pack-worth-it` (timesaver.gg Founder's Pack coverage).
 - Community: `https://www.reddit.com/r/aion/` (r/aion subreddit).
+- Community: `https://corpus.gg/blog/aion-2/pet-guide` (pet collection, Pet Insight and Genus Insight; reviewed 2026-10-21).
+- Community: `https://aion2builder.com/guides/pets/` (faction starter monster routes and soul thresholds; reviewed 2026-10-21).
+- Community: `https://aion2codex.com/guides/game-systems/pets-and-genus` (in-game Source workflow; reviewed 2026-10-21).
 
 ## Open Questions
 

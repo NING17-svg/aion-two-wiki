@@ -112,6 +112,11 @@ export const homePage: PageContent = {
           "href": "/guides/leveling"
         },
         {
+          "title": "Pet farming",
+          "summary": "Find pet soul sources, starter monster routes, and Genus progression steps.",
+          "href": "/guides/pet-farming"
+        },
+        {
           "title": "Beginner dungeons",
           "summary": "First instanced group content with mechanics, groups, and rewards.",
           "href": "/guides/dungeons-beginner"

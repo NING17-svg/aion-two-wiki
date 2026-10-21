@@ -6,6 +6,14 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 
 ## Change Log
 
+### 2026-10-21 - AION 2 pet farming guide
+
+- Task: Add one practical inner guide for the `aion 2 pet farming` search intent.
+- URL: `/guides/pet-farming`; linked from the homepage and guides hub.
+- Content: In-game pet Source workflow, faction-specific starter examples, Global community soul thresholds, Pet Insight versus Genus Insight, and dated source links. Community details are identified as such and direct readers to verify the current client.
+- Files: `src/data/pages/pet-farming.ts`, `src/data/pages/fixed-pages.ts`, `src/data/pages/home.ts`, `CONTENT_INDEX.md`, `GROWTH_LOG.md`.
+- Verification: `npm run validate:content`, `npm run typecheck`, `npm run build`, `npm run validate:rendered-seo`, and `npm run validate:render` passed. Static export contains the H1 and sitemap URL; homepage and guides hub link to the new route.
+
 ## Change Log
 
 ### 2026-10-01 - Public page render-quality repair
